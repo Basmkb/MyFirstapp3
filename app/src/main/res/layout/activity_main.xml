@@ -22,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnMoreInfo"
+        android:onClick="onCickMoreInfo"
         android:layout_alignParentBottom="true" />
 
     <ListView
