@@ -4,4 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="h1">35sp</dimen>
     <dimen name="h2">20sp</dimen>
+    <dimen name="h3">14sp</dimen>
+    <dimen name="my_morgin">15dp</dimen>
+    <dimen name="my_icon">120dp</dimen>
 </resources>

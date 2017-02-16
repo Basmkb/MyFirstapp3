@@ -4,11 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.myfirstapp.MainActivity">
+    tools:context="com.example.user.myfirstapp.MainActivity"
+    android:background="@drawable/bg18">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,5 +16,21 @@
         android:id="@+id/textView"
         android:textColor="@android:color/holo_red_light"
         android:textStyle="bold" />
+
+    <Button
+        android:text="@string/MoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMoreInfo"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/btnMoreInfo"
+        android:id="@+id/livTroffic"
+        android:background="#c8ffffff"
+        android:layout_margin="@dimen/my_morgin" />
 
 </RelativeLayout>
