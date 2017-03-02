@@ -7,4 +7,5 @@
     <dimen name="h3">14sp</dimen>
     <dimen name="my_morgin">15dp</dimen>
     <dimen name="my_icon">120dp</dimen>
+    <dimen name="my_picture">150dp</dimen>
 </resources>
