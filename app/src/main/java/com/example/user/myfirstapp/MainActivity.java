@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this,Detail.class);
                 intent.putExtra("Title",titlesStrings[position]);
-                intent.putExtra("Detil",detailStrings[position]);
+                intent.putExtra("Detail",detailStrings[position]);
                 intent.putExtra("Image",ints[position]);
                 startActivity(intent);
             }

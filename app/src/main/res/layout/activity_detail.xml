@@ -5,59 +5,59 @@
     android:id="@+id/activity_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.myfirstapp.Detail"
-    android:background="@android:color/holo_green_light">
+    android:background="@android:color/holo_green_light"
+    tools:context="com.example.user.myfirstapp.Detail">
 
     <TextView
-        android:text="TextView"
+        android:id="@+id/txtTitleDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtTitleDetail"
         android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
-        android:textSize="@dimen/h1"
-        android:layout_margin="@dimen/my_morgin" />
+        android:layout_margin="@dimen/my_morgin"
+        android:text="TextView"
+        android:textSize="@dimen/h1" />
 
     <Button
-        android:text="Back"
+        android:id="@+id/btnBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:onClick="clickBack"
-        android:id="@+id/btnBack"
-        android:layout_alignParentBottom="true" />
+        android:text="Back" />
 
     <ImageView
+        android:id="@+id/imvlmageDetail"
         android:layout_width="@dimen/my_picture"
         android:layout_height="@dimen/my_picture"
-        app:srcCompat="@drawable/traffic_01"
-        android:id="@+id/imvlmageDetail"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/txtTitleDetail"
-        android:layout_margin="@dimen/my_morgin" />
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_morgin"
+        app:srcCompat="@drawable/traffic_01" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imvlmageDetail"
         android:layout_above="@+id/btnBack"
+        android:layout_below="@+id/imvlmageDetail"
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/my_morgin">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
-                android:text="TextView"
+                android:id="@+id/txtDetailScro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/txtDetailScro" />
+                android:text="TextView" />
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></LinearLayout>
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
