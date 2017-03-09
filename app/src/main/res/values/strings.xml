@@ -3,4 +3,8 @@
     <string name="Txtitel">ป้ายจราจร</string>
     <string name="MoreInfo">ข้อมูลเพิ่มเติม</string>
     <string name="aboutMe">About Me</string>
+    <string name="name">ชื่อ นาย ทรัพย์สิน วงษ์ศรีทา</string>
+    <string name="idsdu">รหัสนักศึกษา u5711020660005</string>
+    <string name="com">หลักสูตร วิทยาการคอม</string>
+    <string name="facebook">Bas Saiburn</string>
 </resources>

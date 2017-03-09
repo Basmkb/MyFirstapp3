@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpapers_a_00"
+    tools:context="com.example.user.myfirstapp.AboutMe">
+
+    <TextView
+        android:id="@+id/txtAboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/aboutMe"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="@dimen/h1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/my_picture"
+        android:layout_height="@dimen/my_picture"
+        android:layout_below="@+id/txtAboutMe"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_morgin"
+        app:srcCompat="@drawable/bas" />
+
+    <Button
+        android:id="@+id/btnAboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:onClick="onClickAboutMe"
+        android:text="BACK" />
+
+    <ScrollView
+        android:id="@+id/scroAboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAboutMe"
+        android:layout_below="@+id/imageView"
+        android:layout_margin="@dimen/my_morgin"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_morgin"
+                android:layout_weight="1"
+                android:text="@string/name"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_morgin"
+                android:layout_weight="1"
+                android:text="@string/idsdu"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_morgin"
+                android:layout_weight="1"
+                android:text="@string/com"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/my_morgin"
+                android:layout_weight="1"
+                android:onClick="onClickface"
+                android:text="@string/facebook"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="@dimen/h3" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

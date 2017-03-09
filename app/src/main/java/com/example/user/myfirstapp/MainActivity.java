@@ -47,15 +47,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }//main Method onCreate
     public void onCickMoreInfo(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("https://www.dlt.go.th/th/dlt-knowledge/view.php?_did=111"));
         startActivity(intent);
     }
+    public void btnAboutMe (View view) {
+        Intent intent = new Intent(MainActivity.this,AboutMe.class);
+        startActivity(intent);
+    }
+
 } //main Class
 
