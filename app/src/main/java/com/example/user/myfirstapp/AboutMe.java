@@ -44,7 +44,15 @@ public class AboutMe extends AppCompatActivity {
             }
         });
       //Phone onClick
-
+      TextView phoneTextView = (TextView) findViewById(R.id.txtTel);
+        phoneTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
+                phoneIntent.setData(Uri.parse("tel:0618208267"));
+                startActivity(phoneIntent);
+            }
+        });
 
     }
 

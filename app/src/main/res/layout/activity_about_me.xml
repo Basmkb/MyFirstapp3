@@ -86,11 +86,11 @@
                 android:layout_weight="1"
                 android:onClick="onClickface"
                 android:text="@string/facebook"
-                android:textColor="@android:color/holo_green_light"
+                android:textColor="@android:color/holo_orange_dark"
                 android:textSize="@dimen/h3" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/txtTel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/my_morgin"
