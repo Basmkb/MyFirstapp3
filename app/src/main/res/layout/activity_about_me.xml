@@ -89,6 +89,15 @@
                 android:textColor="@android:color/holo_green_light"
                 android:textSize="@dimen/h3" />
 
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_morgin"
+                android:layout_marginTop="@dimen/my_morgin"
+                android:layout_weight="1"
+                android:text="@string/Tell" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
